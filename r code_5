@@ -1,0 +1,37 @@
+# SOAL 1
+# Rata-rata waktu tunggu = 5 menit
+# Ditanya: P(X > 5)
+# Distribusi Eksponensial
+mu <- 5
+lambda <- 1 / mu
+P1 <- pexp(5, rate = lambda, lower.tail = FALSE)
+P1
+
+# SOAL 2
+# Kereta tiba secara acak antara 07.00 - 07.20
+# Interval = 20 menit
+# Ditanya: Varians waktu tunggu
+# Distribusi Uniform
+a <- 0
+b <- 20
+varian <- (b - a)^2 / 12
+varian
+
+# SOAL 3
+# Rata-rata masa pakai sensor = 10 tahun
+# Ditanya: P(X < 5)
+# Distribusi Eksponensial
+mu <- 10
+lambda <- 1 / mu
+P3 <- pexp(5, rate = lambda)
+P3
+
+# SOAL 4
+# Berat kopi ~ Normal(mu = 250, sigma = 5)
+# Underweight jika berat < 240 gram
+# Ditanya: P(X < 240)
+# Distribusi Normal
+mu <- 250
+sigma <- 5
+P4 <- pnorm(240, mean = mu, sd = sigma)
+P4
